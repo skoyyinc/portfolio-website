@@ -42,7 +42,7 @@ hr{
 }
 
 .top {
-  background: linear-gradient(to right, #F09819, #FF512F);
+  background-color: transparent;
   position: relative;
   padding-top: 100px;
   z-index: 1;
