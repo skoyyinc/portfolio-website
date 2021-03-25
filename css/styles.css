@@ -62,7 +62,6 @@ hr{
 .bottom{
   background-color: transparent;
   position: relative;
-  padding-top:25px;
   margin: 0;
   top: -10px;
 
@@ -115,6 +114,26 @@ hr{
   height: 175px;
   float: left;
   margin-right: 30px;
+}
+
+.contact-me{
+  width: 50%;
+  margin : 100px auto 50px;
+  text-align: center;
+  line-height: 2;
+
+}
+
+.web-design-desc{
+  overflow: hidden;
+}
+
+.mobile-dev-desc{
+  overflow: hidden;
+}
+
+.mentoring-desc{
+  overflow: hidden;
 }
 
 .BUTTON_ESP {
@@ -174,14 +193,14 @@ hr{
 
 @keyframes animate {
     0%{
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-        border-radius: 0;
-    }
-    100%{
         transform: translateY(-1000px) rotate(720deg);
         opacity: 0;
         border-radius: 50%;
+    }
+    100%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
     }
 }
 
@@ -202,7 +221,7 @@ hr{
     width: 20px;
     height: 20px;
     background: rgba(255, 255, 255, 0.2);
-    animation: animate 19s linear infinite;
+    animation: animate 15s linear infinite;
 }
 
 
