@@ -23,22 +23,31 @@ h3 {
   color: #f9813a;
 }
 
-a{
-  color: orange;
+
+
+p {
+  font-size: 1rem;
 }
 
 hr{
-  border-style: dotted;
-  width: 5%;
-  border-width: thick 0 0;
-  margin-bottom: 100px;
-  border-color: grey;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 20%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+.heading {
+  font-size: 5vw;
 }
 
 .subtitle {
   color: black;
   font-weight: normal;
   line-height: 2;
+  font-size: 2.5vw;
 }
 
 .top {
@@ -46,7 +55,6 @@ hr{
   position: relative;
   padding-top: 25px;
   z-index: 1;
-
 
 
 }
@@ -76,64 +84,74 @@ hr{
 }
 
 .profile {
-  width: 75%;
-  margin: 0 auto 100px;
+  padding: 5% 15%;
 
 }
 
 .profile-pic{
-  margin-top:50px;
+  margin:50px;
+}
+
+.skills {
+  padding: 5% 10%;
+  padding-bottom: 0;
+  text-align: center;
 }
 
 .skill-row {
-  width: 50%;
-  margin : 100px auto 100px;
-  text-align: justify;
-  line-height: 2;
+  text-align: left;
+  margin: 5% 0;
+
 }
 
-.web-design {
-  border-radius: 100%;
-  width: 25%;
-  height: 11rem;
-  float: left;
-  margin-right: 30px;
+.skill-wrapper {
+  margin-top: 5%;
 }
 
-.mobile-dev {
-  border-radius: 100%;
-  width: 25%;
-  height: 11rem;
-  float: right;
-  margin-left: 30px;
+.skill-box {
+  width: 100%;
+  background-color: white;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 10%;
+  box-shadow: 0px 5px 20px rgb(0 0 0 / 15%);
+  cursor: pointer;
+  transition: 0.4s;
 }
 
-.mentoring {
-  border-radius: 100%;
-  width: 25%;
-  height: 175px;
-  float: left;
-  margin-right: 30px;
+.skill-box:hover {
+  background-color:#f7f7f7;
 }
+
+.skill-heading {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  padding: 0 15%;
+}
+
+.skill-desc {
+  padding: 5% 10%;
+  text-align: center;
+}
+
+.skill-img {
+  height: 15rem;
+  text-align: center;
+  border-radius: 100%;
+  padding-top: 10px;
+
+}
+
+.row {
+  padding-bottom: 10%;
+}
+
 
 .contact-me{
-  width: 50%;
-  margin : 100px auto 50px;
+  padding: 15% 15%;
   text-align: center;
   line-height: 2;
 
-}
-
-.web-design-desc{
-  overflow: hidden;
-}
-
-.mobile-dev-desc{
-  overflow: hidden;
-}
-
-.mentoring-desc{
-  overflow: hidden;
 }
 
 .BUTTON_ESP {
@@ -162,33 +180,49 @@ hr{
    text-decoration: none;
 }
 
-.fa {
-  padding: 10px;
-  font-size: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
+.bottom fa{
   border-radius: 100%;
-  position: relative;
-  z-index: 1;
+  margin: 10px 20px;
+
 }
 
-.fa:hover {
+.bottom fa:hover {
     opacity: 0.7;
+}
+
+.bottom {
+  background-color: transparent;
+  position: relative;
+  z-index: 1;
 }
 
 .fa-twitter {
   background: #55ACEE;
   color: white;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  padding: 5px 5px;
+  margin: 1% auto;
+  text-decoration: none;
 }
 .fa-linkedin {
   background: #007bb5;
   color: white;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  padding: 5px 5px;
+  margin: 1% auto;
+  text-decoration: none;
 }
 
 .fa-instagram {
   background: #125688;
   color: white;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  padding: 5px 5px;
+  margin: 1% auto;
+  text-decoration: none;
 }
 
 @keyframes animate {
@@ -302,4 +336,27 @@ hr{
   position: relative;
   z-index: 1;
   clear:left;
+  color: orange;
+}
+
+.cta-button {
+  border-color: #f9813a;
+  color: #f9813a;
+}
+
+.cta-button:hover {
+  background-color: #f9813a;
+  color: white;
+  border-color: #f9813a;
+}
+
+@media screen and (max-width:1080px) {
+  .skill-img {
+    height: auto;
+    width: 60%;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
 }

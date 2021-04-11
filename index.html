@@ -4,74 +4,86 @@
 <head>
   <meta charset="utf-8">
   <title>Skoyy, Inc</title>
-  <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="img/favicon-96x96.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins&family=Sacramento&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
   <div class="top">
-    <img style="height:8em;"src="img/skoyy-inc-logo.png" alt="">
-    <h1>Hi, I'm Skoyy.</h1>
-    <h2 class=subtitle>A web developer</h2>
+    <img style="height:8em;" src="img/skoyy-inc-logo.png" alt="">
+    <h1 class="heading">Hi, I'm Skoyy.</h1>
+    <h2 class="subtitle">A web developer</h2>
     <img class="cityImage" src="img/city-illus.png" alt="city-img">
     <div class="">
-    <ul class="background">
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </div>
+      <ul class="background">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
   </div>
   <div class="middle">
     <div class="profile">
       <img class="profile-pic" src="img/profile-pic.png" alt="">
       <h2>Hello.</h2>
-      <p><strong>I'm Daffa Farras a.k.a Skoyy.</strong><br />I'm a Freelance Programmer looking for projects to work on together and help people with their digital needs.</p>
+      <p><strong>I'm Daffa Farras a.k.a Skoyy.</strong><br />I'm a Freelance Programmer and Founder of digiboys.id</p>
     </div>
     <hr>
     <div class="skills">
-      <h2>My Skills.</h2>
-      <div class="skill-row">
-        <img class="web-design" src="img/web-design.gif" alt="web-design">
-        <div class="web-design-desc">
-          <h3>Web Design & Development</h3>
-          <p class="web-design-desc">I design and develop websites. I can help you build your website for you or your company. All with full functionality and a design that pleases the eyes.</p>
+      <h2 style="margin-bottom: 50px;">My Skills</h2>
+      <div class="row">
+        <div class="skill-wrapper col-lg-4">
+          <div class="skill-box" role="button" data-bs-toggle="collapse" data-bs-target="#collapse-desc-01">
+            <img class="skill-img" src="img/web-design.gif" alt="web-design">
+            <h3 class="skill-heading">Web Design & Development</h3>
+            <div class="collapse" id="collapse-desc-01">
+              <p class="skill-desc">I design and develop websites. I can help you build your website for you or your company. All with full functionality and a design that pleases the eyes.</p>
+            </div>
+            <i class="fa fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="skill-wrapper col-lg-4">
+          <div class="skill-box" role="button" data-bs-toggle="collapse" data-bs-target="#collapse-desc-02">
+            <img class="skill-img" src="img/mobile-dev.gif" alt="web-design">
+            <h3 class="skill-heading">Mobile App Development</h3>
+            <div class="collapse" id="collapse-desc-02">
+              <p class="skill-desc">I am experienced in both Android and iOS development. Mobile application is a necessity for modern businesses. I can help you create just that, so your business won't fall behind.</p>
+            </div>
+            <i class="fa fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="skill-wrapper col-lg-4">
+          <div class="skill-box" role="button" data-bs-toggle="collapse" data-bs-target="#collapse-desc-03">
+            <img class="skill-img" src="img/mentoring.gif" alt="web-design" style="width: 75%;">
+            <h3 class="skill-heading">Programming Mentorship</h3>
+            <div class="collapse" id="collapse-desc-03">
+              <p class="skill-desc">Programming can be frustrating sometimes. But I might be able to help. I have successfully mentored dozens of students with zero experience in programming and still currently teaching
+                some of them.</p>
+            </div>
+            <i class="fa fa-chevron-down"></i>
+          </div>
         </div>
       </div>
-      <div class="skill-row">
-        <img class="mobile-dev" src="img/mobile-dev.gif" alt="">
-        <div class="mobile-dev-desc">
-          <h3>Mobile App Development</h3>
-          <p >I am experienced in both Android and iOS development. Mobile application is a necessity for modern businesses. I can help you create just that, so your business won't fall behind.</p>
-        </div>
+      <hr>
+      <div class="contact-me">
+        <h2>Get In Touch</h2>
+        <h3>Interested to work together?</h3>
+        <p>If you are, feel free to hit me up!</p>
+        <button class="btn btn-outline-dark btn-lg cta-button" type="button" role="button" onclick="location.href='mailto:skoyyincorporated@gmail.com?subject=Hey, lets work together!';">Contact Me</button>
 
       </div>
-      <div class="skill-row">
-        <img class="mentoring" src="img/mentoring.gif" alt="">
-        <div class="mentoring-desc">
-          <h3>Programming Mentorship</h3>
-          <p>Programming can be frustrating sometimes. But I might be able to help. I have successfully mentored dozens of students with zero experience in programming and still currently teaching
-          some of them.</p>
-        </div>
-
-      </div>
-    </div>
-    <hr>
-    <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <h3>Interested to work together?</h3>
-      <p>If you are, feel free to hit me up!</p>
-      <a href="mailto:skoyyincorporated@gmail.com?subject=Hey, lets work together!" class="BUTTON_ESP">CONTACT ME</a>
     </div>
   </div>
 
@@ -87,3 +99,16 @@
 </body>
 
 </html>
+
+<!--
+
+      <img class="mobile-dev" src="img/mobile-dev.gif" alt="">
+      <div class="mobile-dev-desc">
+        <h3>Mobile App Development</h3>
+        <p >I am experienced in both Android and iOS development. Mobile application is a necessity for modern businesses. I can help you create just that, so your business won't fall behind.</p>
+
+        <img class="mentoring" src="img/mentoring.gif" alt="">
+        <div class="mentoring-desc">
+          <h3>Programming Mentorship</h3>
+          <p>Programming can be frustrating sometimes. But I might be able to help. I have successfully mentored dozens of students with zero experience in programming and still currently teaching
+          some of them.</p> -->
